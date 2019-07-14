@@ -1,0 +1,536 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------------------generals--------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex_center {
+	justify-content: center;
+}
+
+/*--------------------------------fonts----------------------------*/
+
+.font {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+
+	color: #1d1d1d;
+}
+
+.font-size_11 {
+	font-size: 11px;
+	line-height: 13px; 
+	color: #fff;
+}
+
+.font-size_13 {
+	font-size: 13px;
+	line-height: 21px; 
+}
+
+.font-size_13h15 {
+	font-size: 13px;
+	line-height: 15px; 
+}
+
+.font-size_13h24 {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.font-size_13h24White {
+	font-size: 13px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.font-size_14 {
+	font-size: 14px;
+	line-height: 21px; 
+}
+
+.font-size_16 {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.font-size_16h36 {
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.font-size_22 {
+	font-size: 22px;
+	line-height: 34px;
+}
+
+/*--------------------------container--------------------------*/
+
+.container {
+	max-width: 962px;
+	padding-right: 6px;
+	margin: auto;
+}
+
+/*--------------------------button-----------------------------*/
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	box-sizing: border-box;
+	background: transparent;
+	
+	cursor: pointer;
+	outline: none;
+}
+
+.button:hover,
+.button:focus {
+	background: #262626;
+	border: 1px solid #000;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+/* -------------------------HEADER-------------------------------- */
+
+.header {
+	height: 72px;
+	background-color: #fff;
+	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+
+/* ---------------------logo-------------------- */
+
+.logo {
+	width: 119.23px;
+	height: 12.31px;
+}
+
+.logo_tablet {
+	display: none;
+}
+
+/* ---------------------delivery--------------------- */
+
+.delivery {
+	padding-left: 31.38px;
+}
+
+.delivery__time {
+	width: 65px;
+	text-transform: uppercase;
+}
+
+.delivery__adress {
+	margin-left: 9px;
+}
+
+.delivery__input {
+	width: 292px;
+	
+	background-image: url(../img/Desktop/location.svg);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	
+	padding-left: 36px;
+
+	margin-top: 1px;
+	margin-left: 5px;
+}
+
+.delivery label {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #626262;
+}
+
+/* ---------------------user-form--------------------- */
+
+.user-form {
+	grid-area: user-form;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.user-form__item {
+	margin-right: 16px;
+}
+
+.user-form__item:last-child {
+	margin-right: 0;
+}
+
+.button__user-form {
+	width: 80px;
+	display: grid;
+	text-align: center;
+	align-items: center;
+}
+
+/* .button__user-form_black {
+	background: #262626;
+	color: #fff;
+	border: none;
+} */
+
+.basket {
+	width: 40px;
+	height: 72px;
+}
+
+.basket_img {
+	width: 19px;
+	height: 23px;
+}
+
+.header__basket{
+	margin-left: 16px;
+}
+
+/* ---------------------MAIN--------------------- */
+
+.main__grid {
+	grid-gap: 39px;
+}
+
+.mobileDelivery {
+	display: none;
+}
+
+.restaurants {
+	padding-bottom: 80px;
+}
+
+/* ---------------------search--------------------- */
+
+.search {
+	grid-row: 1/2;
+	height: 48px;
+
+	background: url(../img/Desktop/search.svg) no-repeat scroll 0 8px;
+	background-size: 22px 21.9px;
+	border: none;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+	
+	padding-left: 30px;
+	padding-bottom: 9px; 
+
+	color: #626262;
+	opacity: 0.5;
+	outline: none;
+}
+
+.search:focus {
+	color: #1d1d1d;
+	opacity: 1;
+}
+
+.restaurants_search {
+	margin-top: 32px;
+}
+
+/* ---------------------header--------------------- */
+
+.restaurants__header {
+	grid-row: 2/3;
+	margin-bottom: 16px;
+}
+
+.page__header_Tablet {
+	display: none;
+}
+
+/* ---------------------restaurants---------------------*/
+
+.restaurants-list {
+	grid-template-columns: 308px 308px 308px;
+	grid-template-rows: 366px 366px 366px;
+	grid-gap: 16px;
+}
+
+.restaurants-list__item {
+	grid-gap: 16px;
+}
+
+.restaurants-list__imgContainer {
+	display: block;
+	width: 308px;
+	height: 256px;
+	overflow: hidden;
+}
+
+.restaurants-list__img {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.description {
+	margin: 0;
+	padding-bottom: 20px;
+	grid-gap: 4px;
+}
+
+.restaurants_tablet {
+	display: none;	
+}
+
+.restaurants_mobile {
+	display: none;
+}
+/* ---------------------FOOTER--------------------- */
+
+footer {
+	background-color: #262626;
+	color: #fff;
+}
+
+.footer__container {
+	grid-template-rows: 116px;
+	grid-template-columns: 956px;
+	grid-gap: 0;
+}
+
+/* ---------------------logo--------------------- */
+
+.footer__logo {
+	align-items: center;
+	
+	border-bottom: 1px solid rgba(100%, 100%, 100%, 0.4);
+}
+
+.footer__logo_img {
+	padding-top: 13px;
+}
+
+/* ---------------------information--------------------- */
+
+.footer__info {
+	grid-template-columns: 324px 324px;
+	grid-template-rows: 220px;
+	
+	grid-template-areas: 
+		"column1 column2 column3";
+		
+	border-bottom: 1px solid rgba(100%, 100%, 100%, 0.4);
+}
+
+/* ---------------------socials--------------------- */
+
+.leftColumn {
+	grid-template-rows: 105px ;
+}
+
+.languages {
+	background: url(../img/Desktop/arrow.svg) no-repeat scroll 205px 16px,
+				url(../img/Desktop/world.svg) no-repeat scroll 16px 12.14px,
+	#3b3b3b;
+	background-size: 14px 8px, 16px 16px;
+	padding-left: 48px;
+	
+	width: 227px;
+	height: 40px;
+	border: none;
+	border-radius: 2px;
+
+	text-transform: uppercase;
+	color: #fff;
+	
+	-moz-appearance: none; /* Firefox */
+	-webkit-appearance: none; /* Safari and Chrome */
+	appearance: none;
+	outline: none;
+}
+
+.leftColumn__languages {
+	margin-top: 32px;
+}
+
+.socials {
+	width: 92px;
+	height: 60px;
+	grid-gap: 17px;
+}
+
+.hashTag {
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+
+	color: #fff;
+}
+
+.hashTag__text {
+	margin-left: 11px;
+}
+
+.hashTag::before {
+	content: "#";
+	position: absolute;
+    width: 10;
+    height: 19;
+    
+    color: #49a144;
+}
+
+.socials-icons {
+	grid-template-columns: 36px 32px 18px;
+	grid-template-rows: 24px;
+	
+	grid-template-areas: 
+	"facebook twitter instagram";
+}
+
+.socials-icons_facebook {
+	grid-area: facebook;
+}
+
+.socials-icons_twitter {
+	grid-area: twitter;	
+}
+
+.socials-icons_instagram {
+	grid-area: instagram;
+}
+
+
+/* ---------------------partnership--------------------- */
+
+.footer__list {
+	list-style: none;
+	list-style-position: outside;
+	margin-top: 37px;
+	grid-gap: 21px;
+}
+
+.footer__link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+/* ---------------------helhs info--------------------- */
+
+.helpsInfo {
+	grid-area: column3;
+}
+
+
+.footer__list_gap23 {
+	grid-gap: 23px;
+	margin-top: 38px;
+}
+
+.footer__item {
+	line-height: 16px;
+}
+
+/* ---------------------downloads--------------------- */
+
+.downloads {
+	border-bottom: 1px solid rgba(100%, 100%, 100%, 0.4);
+	grid-template-areas:
+		"AppStore GooglePlay";
+	align-items: center;
+	justify-content: center;
+	height: 121px;
+}
+
+.downloads__list {
+	display: inline-flex;
+	margin-left: 58px;
+	margin-top: 3px;
+}
+.downloads__item {
+	margin-right: 40px;
+}
+
+.downloads__appStore {
+	width: 121px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.downloads__googlePlay {
+	grid-area: GooglePlay;
+}
+
+/* --------------------footer_row4---------------------- */
+
+
+.copyright {
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 155px 155px 155px;
+	grid-template-rows: 40px 31px 40px;
+	grid-column-gap: 101px;
+	font-size: 11px;
+	line-height: 13px;
+}
+.copyright__info {
+	margin: 0;
+	grid-row: 2/3;
+}
+
+.copyright__link {
+	text-decoration: none;
+}
+
+.copyright__link:hover {
+	color: #49a144;
+}
+
+/* ---------------------button_up--------------------- */
+
+
+.button_up {
+	width: 80px;
+	height: 80px;
+	background: #59bd5a;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 16px;
+	bottom: 42px;
+}

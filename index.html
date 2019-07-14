@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Uber Eats</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container flex">
+			<!--logo_desktop-->
+			<a class="logo" href="#">
+				<img src="img/desktop/logo.svg" alt="Uber_logo">
+			</a>
+
+			<!--logo_tablet-->
+			<a class="logo_tablet" href="#">
+				<img class="logo__img" src="img/Tablet/logo.svg" width="106" height="13" alt="Uber_logo">
+			</a>
+
+			<div class="delivery flex">
+				<button class="delivery__time button font font-size_16">
+					asap
+				</button>
+				
+				<form class="delivery__adress">
+					<label>to
+					  <input
+							class="delivery__input font font-size_16h36"		  
+							type="text" name="address" 
+							placeholder="Enter your address..." 
+							>
+					</label>
+			  	</form>	
+			</div>
+		
+			<ul class="user-form flex">
+				<li class="user-form__item button__user-form">
+					<a class="button font font-size_13h24" href="#" target="_blank">
+						Sign In
+					</a>
+				</li>
+				<li class="button__user-form">
+					<a class="button button__user-form_black font font-size_13h24" href="#" target="_blank">
+						Register
+					</a>
+				</li>
+				<li class="user-form__item header__basket">
+					<a class="basket flex flex_center" href="#" target="_blank">
+						<img src="img/Desktop/basket.svg" class="basket_img" alt="basket">
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</header>
+	
+	<main class="container grid main__grid">
+		<section class="mobileDelivery">
+			<div class="mobileDelivery__container">
+				<form action="" class="flex">
+					<label>When
+						<button class="button mobileDelivery-button mobileAdress__button">asap</button>
+					</label>
+
+					<label>To
+						<input class="mobileAdress button mobileAdress__button" placeholder="Enter your address...">
+					</label>
+				</form>
+			</div>
+		</section>
+
+		<section class="restaurants">
+			<h1 class="restaurants__header font font-size_22">Kyiv Restaurants</h1>
+									
+			<ul class="grid restaurants-list">
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/McDonalds.png" class="restaurants-list__img" width="308" alt="McDonald's">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">Макдоналдс</span>
+							<span class="font font-size_14">₴₴ • Бургеры</span>
+							<span class="font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/WOKWEI.png" class="restaurants-list__img" width="308" alt="WOKWEI">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">WOKWEI</span>
+							<span class="font font-size_14">₴ • Китайська • Азіатська</span>
+							<span class="font font-size_13">40 - 50 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/YIZHA.png" class="restaurants-list__img" width="308" alt="YIZHA">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">YIZHA</span>
+							<span class="font font-size_14">₴₴ • Американська • Бургери • Вулична їжа</span>
+							<span class="font font-size_13">35 - 45 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/Musafir.png" class="restaurants-list__img" width="308" alt="Musafir">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">Musafir (вул. Саксаганського)</span>
+							<span class="font font-size_14">₴₴ • Близькосхідна</span>
+							<spanp class="font font-size_13">30 - 40 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/WOKWEI2.png" class="restaurants-list__img" width="308" alt="WOKWEI">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">WOKWEI</span>
+							<span class="font font-size_14">₴ • Китайська • Азіатська</span>
+							<span class="font font-size_13">40 - 50 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/Milk Bar.png" class="restaurants-list__img" width="308" alt="Milk Bar">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">Milk Bar</span>
+							<span class="font font-size_14">₴₴ • Десерти • Європейська</span>
+							<span class="font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/Pizza.png" class="restaurants-list__img" width="308"" alt="Mimosa Brooklyn Pizza">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">Mimosa Brooklyn Pizza</span>
+							<span class="font font-size_14">₴₴ • Італійська • Піца • Американська</span>
+							<span class="font font-size_13">15 - 25 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/To Be.png" class="restaurants-list__img" width="308" alt="To Be">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">To Be</span>
+							<span class="font font-size_14">₴₴ • Японська • Азіатська • Суші</span>
+							<span class="font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurants-list__item grid">
+						<a class="restaurants-list__imgContainer" href="#">
+							<img src="img/Desktop/Druzi Cafe.png" class="restaurants-list__img" width="308" alt="Druzi Cafe">
+						</a>
+						<p class="description grid">
+							<span class="font font-size_16">Druzi Cafe (вул. Прорізна)</span>
+							<span class="font font-size_14">₴₴• Американська • Сучасна європейська • У...</span>
+							<span class="font font-size_13">30 - 40 Min</span>
+						</p>
+					</li>
+				</ul>
+				
+		</section>
+			
+		<!--restaurantsMoscow tablet-->
+		<section class="restaurants_tablet">
+				<h1 class="page__header_Tablet font font-size_22">Moscow Restaurants</h1>
+				<ul class="restaurantsMoscow__list_tablet">
+					<li class="restaurantsKiev__item">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/McDonalds.png" class="restaurantsKiev__img" height="256" alt="McDonald's">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">Макдоналдс — Газетный</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽ • Бургеры</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/DimSum.png" class="restaurantsKiev__img" height="256" alt="DimSum">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">DimSum & Co — ЦДМ</span>
+							<span class="restaurantsKiev__products font font-size_14">₽ • Японская • Китайская • Азиатская</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">40 - 50 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/OK.png" class="restaurantsKiev__img" alt="DvizhOK">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">ДвижОК — Манежная</span>
+							<span class="restaurantsKiev__products font font-size_14">₽ • Американская • Европейская</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">35 - 45 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/NHA.png" class="restaurantsKiev__img" alt="NHA">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">НЯ — NHA</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽ • Вьетнамская</span>
+							<spanp class="restaurantsKiev__deliveryTime font font-size_13">30 - 40 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/Dzi.png" class="restaurantsKiev__img" alt="Dzi">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">Точка Дзы — Цветной</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽ • Вьетнамская</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">40 - 50 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/Cinnabon.png" class="restaurantsKiev__img" alt="Cinnabon">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">Cinnabon</span>
+							<span class="restaurantsKiev__products font font-size_14">₽ • Выпечка • Десерты • Капкейки</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/PIZZELOVE.png" class="restaurantsKiev__img" alt="PIZZELOVE">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">PIZZELOVE</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽ • Пицца</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">15 - 25 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/ZU.png" class="restaurantsKiev__img" alt="Zu Cafe">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">Zю кафе — Тверская</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽ • Японская</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">25 - 35 Min</span>
+						</p>
+					</li>
+					<li class="restaurantsKiev__item grid">
+						<a class="restaurantsKiev__imgContainer" href="#">
+							<img src="img/Tablet/BQ.png" class="restaurantsKiev__img" alt="Bar BQ Cafe">
+						</a>
+						<p class="grid restaurantsKiev__description">
+							<span class="restaurantsKiev__name font font-size_16">Bar BQ Cafe — Манежная</span>
+							<span class="restaurantsKiev__products font font-size_14">₽₽₽ • Европейская</span>
+							<span class="restaurantsKiev__deliveryTime font font-size_13">30 - 40 Min</span>
+						</p>
+					</li>
+				</ul>
+		</section>
+		
+		<!--restaurants mobile-->
+		<section class="restaurants_mobile">
+			
+			<h1 class="page__header_restaurantsMobile font font-size_22">Moscow Restaurants</h1>
+			<ul class="restaurantsMobile__list">
+				<li class="restaurantsKiev__item">
+					<a class="restaurantsKiev__imgContainer" href="#">
+						<img src="img/Mobile/McDonalds.png" class="restaurantsKiev__img" alt="McDonald's">
+					</a>
+					<p class="grid restaurantsKiev__description">
+						<span class="restaurantsKiev__name font font-size_16">Макдоналдс — Газетный</span>
+						<span class="restaurantsKiev__products font font-size_14">₽₽ • Бургеры</span>
+						<span class="restaurantsKiev__deliveryTime font font-size_13">25 - 35 Min</span>
+					</p>
+				</li>
+				<li class="restaurantsKiev__item">
+					<a class="restaurantsKiev__imgContainer" href="#">
+						<img src="img/Mobile/DimSum.png" class="restaurantsKiev__img" alt="DimSum">
+					</a>
+					<p class="grid restaurantsKiev__description">
+						<span class="restaurantsKiev__name font font-size_16">DimSum & Co — ЦДМ</span>
+						<span class="restaurantsKiev__products font font-size_14">₽ • Японская • Китайская • Азиатская</span>
+						<span class="restaurantsKiev__deliveryTime font font-size_13">40 - 50 Min</span>
+					</p>
+				</li>
+				<li class="restaurantsKiev__item">
+					<a class="restaurantsKiev__imgContainer" href="#">
+						<img src="img/Mobile/Ok.png" class="restaurantsKiev__img" alt="DvizhOK">
+					</a>
+					<p class="grid restaurantsKiev__description">
+						<span class="restaurantsKiev__name font font-size_16">ДвижОК — Манежная</span>
+						<span class="restaurantsKiev__products font font-size_14">₽ • Американская • Европейская</span>
+						<span class="restaurantsKiev__deliveryTime font font-size_13">35 - 45 Min</span>
+					</p>
+				</li>
+				<li class="restaurantsKiev__item">
+					<a class="restaurantsKiev__imgContainer" href="#">
+						<img src="img/Mobile/NHA.png" class="restaurantsKiev__img" alt="NHA">
+					</a>
+					<p class="grid restaurantsKiev__description">
+						<span class="restaurantsKiev__name font font-size_16">НЯ — NHA</span>
+						<span class="restaurantsKiev__products font font-size_14">₽₽ • Вьетнамская</span>
+						<spanp class="restaurantsKiev__deliveryTime font font-size_13">30 - 40 Min</span>
+					</p>
+				</li>
+			</ul>
+		</section>
+		
+		<input
+			type="search"
+			name="search"
+			class="search restaurants_search font font-size_16"
+			placeholder="Search for restaurant or cuisine"
+			>
+		
+	</main>
+		
+		<footer>
+			<div class="container footer__container grid">
+				<a class="footer__logo grid" href="#">
+					<img class="footer__logo_img" src="img/desktop/footer-logo.svg" alt="Uber_logo">
+				</a>
+			  
+				<div class="footer__info grid">
+					<div class="leftColumn grid">
+						<select class="languages leftColumn__languages font font-size_13h15" name="languages" id="languages">
+							<option>English</option>
+							<option>Ukrainian</option>
+							<option>Russian</option>
+						</select>
+					
+						<div class="socials grid">
+							<p class="hashTag font">
+								<span class="hashTag__text">UberEats</span>
+							</p>
+							<div class="socials-icons grid">
+								<a class="socials-icons_facebook" href="#">
+									<img src="img/Desktop/social/facebook.svg" alt="Facebook" />
+								</a>
+								<a class="socials-icons_twitter" href="#">
+									<img src="img/Desktop/social/twitter.svg" alt="Twiter" />
+								</a>
+								<a class="socials-icons_instagram" href="#">
+									<img src="img/Desktop/social/instagram.svg" alt="Instagram" />
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="partnership">
+						<ul class="footer__list grid">
+							<li>
+								<a class="footer__link font font-size_13 href="#">
+									About UberEats
+								</a>
+							</li>
+							<li>
+								<a class="footer__link font font-size_13 href="#">
+									Become a Delivery Partner
+								</a>
+							</li>
+							<li>
+								<a class="footer__link font font-size_13" href="#">
+									Become a Restaurant Partner
+								</a>
+							</li>
+						</ul>
+					</div>
+	
+					<div class="helpsInfo">
+						<ul class="footer__list grid footer__list_gap23">
+							<li class="footer__item">
+								<a class="footer__link font font-size_13" href="#">
+									See all cities
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link font font-size_13" href="#">
+									Pricing
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link font font-size_13" href="#">
+									Help
+								</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link font font-size_13" href="#">
+									FAQs
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+	  
+				<div class="downloads flex">
+					<ul class="downloads__list">
+						<li class="downloads__item">
+							<a class="downloads__appStore" href="#">
+								<img class="downloads__image" src="img/Desktop/appStore.svg" alt="App Store link">
+							</a>
+						</li>
+						<li class="downloads__item">
+							<a class="downloads__googlePlay" href="#">
+								<img class="downloads__image" src="img/Desktop/googlePlay.png" alt="Google Play link">
+							</a>
+						</li>
+					</ul>
+				</div>
+	  
+				   <div class="copyright grid">
+					   <p class="copyright__info font font-size_11">© 2019 Uber Technologies Inc.</p>
+					<a class="copyright__info copyright__link font font-size_11" href="#">Privacy</a>
+					<a class="copyright__info copyright__link font font-size_11" href="#">Terms</a>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="#header" class="button button_up">
+			<img src="img/Desktop/arrowUp.svg" alt="Arrow Up">
+		</a>
+	
+	</body>
+  </html>
+</body>
+</html>

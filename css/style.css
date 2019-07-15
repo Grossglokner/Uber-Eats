@@ -7,6 +7,15 @@ body {
 	padding: 0;
 }
 
+
+/*--------------------------container--------------------------*/
+
+.l-container {
+	max-width: 962px;
+	padding-right: 6px;
+	margin: auto;
+}
+
 /*-------------------------------generals--------------------------*/
 
 ul {
@@ -21,29 +30,37 @@ a {
 	text-decoration: none;
 }
 
-.grid {
+/*----------------------------layouts------------------------------*/
+
+.l-grid {
 	display: grid;
 }
 
-.flex {
+.l-grid_main {
+	grid-gap: 39px;
+}
+
+.l-flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.flex_center {
+.l-flex_center {
 	justify-content: center;
 }
 
 /*--------------------------------fonts----------------------------*/
 
-.font {
+.c-font_Roboto {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 
 	color: #1d1d1d;
 }
+
+/*--------------------------------font-sizes-------------------------*/
 
 .font-size_11 {
 	font-size: 11px;
@@ -92,13 +109,6 @@ a {
 	line-height: 34px;
 }
 
-/*--------------------------container--------------------------*/
-
-.container {
-	max-width: 962px;
-	padding-right: 6px;
-	margin: auto;
-}
 
 /*--------------------------button-----------------------------*/
 
@@ -106,8 +116,12 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40px;
-
+		
+	line-height: 24px;
+	text-transform: uppercase;
+	
+	padding: 8px 12px;
+	
 	border: 1px solid #e0e0e0;
 	border-radius: 2px;
 	box-sizing: border-box;
@@ -115,6 +129,10 @@ a {
 	
 	cursor: pointer;
 	outline: none;
+}
+
+.button_lowerFont {
+	text-transform: none;
 }
 
 .button:hover,
@@ -125,18 +143,17 @@ a {
 	transition: all 0.3s;
 }
 
-/* -------------------------HEADER-------------------------------- */
+/* ------------------------------HEADER---------------------------- */
 
 .header {
-	height: 72px;
+	min-height: 72px;
 	background-color: #fff;
 	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
+/* ---------------------------------logo--------------------------*/
 
-/* ---------------------logo-------------------- */
-
-.logo {
+.logo_desktop {
 	width: 119.23px;
 	height: 12.31px;
 }
@@ -145,19 +162,14 @@ a {
 	display: none;
 }
 
-/* ---------------------delivery--------------------- */
+/* --------------------------------delivery-------------------------*/
 
-.delivery {
+.header__delivery {
 	padding-left: 31.38px;
 }
 
-.delivery__time {
-	width: 65px;
-	text-transform: uppercase;
-}
-
-.delivery__adress {
-	margin-left: 9px;
+.delivery_button {
+	margin-right: 9px; 
 }
 
 .delivery__input {
@@ -182,13 +194,7 @@ a {
 	color: #626262;
 }
 
-/* ---------------------user-form--------------------- */
-
-.user-form {
-	grid-area: user-form;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-}
+/* ----------------------------user-form---------------------------*/
 
 .user-form__item {
 	margin-right: 16px;
@@ -200,16 +206,7 @@ a {
 
 .button__user-form {
 	width: 80px;
-	display: grid;
-	text-align: center;
-	align-items: center;
 }
-
-/* .button__user-form_black {
-	background: #262626;
-	color: #fff;
-	border: none;
-} */
 
 .basket {
 	width: 40px;
@@ -221,15 +218,8 @@ a {
 	height: 23px;
 }
 
-.header__basket{
-	margin-left: 16px;
-}
 
-/* ---------------------MAIN--------------------- */
-
-.main__grid {
-	grid-gap: 39px;
-}
+/* --------------------------------MAIN----------------------------*/
 
 .mobileDelivery {
 	display: none;
@@ -239,7 +229,7 @@ a {
 	padding-bottom: 80px;
 }
 
-/* ---------------------search--------------------- */
+/* ---------------------------search-------------------------------*/
 
 .search {
 	grid-row: 1/2;
@@ -263,11 +253,11 @@ a {
 	opacity: 1;
 }
 
-.restaurants_search {
+.restaurants__search {
 	margin-top: 32px;
 }
 
-/* ---------------------header--------------------- */
+/*--------------------------restaurants__header ---------------------*/
 
 .restaurants__header {
 	grid-row: 2/3;
@@ -280,29 +270,29 @@ a {
 
 /* ---------------------restaurants---------------------*/
 
-.restaurants-list {
+.restaurants__list {
 	grid-template-columns: 308px 308px 308px;
 	grid-template-rows: 366px 366px 366px;
 	grid-gap: 16px;
 }
 
-.restaurants-list__item {
+.restaurants__item {
 	grid-gap: 16px;
 }
 
-.restaurants-list__imgContainer {
+.restaurants__imgContainer {
 	display: block;
 	width: 308px;
 	height: 256px;
 	overflow: hidden;
 }
 
-.restaurants-list__img {
+.restaurants__img {
 	min-width: 100%;
 	min-height: 100%;
 }
 
-.description {
+.restaurants__description {
 	margin: 0;
 	padding-bottom: 20px;
 	grid-gap: 4px;
@@ -332,12 +322,8 @@ footer {
 
 .footer__logo {
 	align-items: center;
-	
-	border-bottom: 1px solid rgba(100%, 100%, 100%, 0.4);
-}
-
-.footer__logo_img {
 	padding-top: 13px;
+	border-bottom: 1px solid rgba(100%, 100%, 100%, 0.4);
 }
 
 /* ---------------------information--------------------- */
@@ -354,7 +340,7 @@ footer {
 
 /* ---------------------socials--------------------- */
 
-.leftColumn {
+.l-leftColumn {
 	grid-template-rows: 105px ;
 }
 
@@ -411,7 +397,7 @@ footer {
     color: #49a144;
 }
 
-.socials-icons {
+.socials__icons {
 	grid-template-columns: 36px 32px 18px;
 	grid-template-rows: 24px;
 	
@@ -419,15 +405,15 @@ footer {
 	"facebook twitter instagram";
 }
 
-.socials-icons_facebook {
+.socials__icons_facebook {
 	grid-area: facebook;
 }
 
-.socials-icons_twitter {
+.socials__icons_twitter {
 	grid-area: twitter;	
 }
 
-.socials-icons_instagram {
+.socials__icons_instagram {
 	grid-area: instagram;
 }
 
@@ -502,7 +488,7 @@ footer {
 	grid-gap: 0;
 	grid-template-columns: 155px 155px 155px;
 	grid-template-rows: 40px 31px 40px;
-	grid-column-gap: 101px;
+	grid-column-gap: 169px;
 	font-size: 11px;
 	line-height: 13px;
 }

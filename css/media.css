@@ -1,12 +1,13 @@
 @media (min-width: 640px) and (max-width: 1023px) {
 
-	.container {
+	.l-container {
 		/* max-width: 962px; */
 		padding: 0 8px;
+		
 	}
 /* ---------------------HEADER--------------------- */
 
-	.logo { 
+	.logo_desktop { 
 		display: none;
 	}
 
